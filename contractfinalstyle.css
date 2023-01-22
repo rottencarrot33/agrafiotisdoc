@@ -1,0 +1,106 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer{
+    background: #343a40;
+    padding: 40px;
+    margin-top: 150px;
+}
+
+footer a{
+    color: #f8f9fa!important
+}
+
+.card-header{
+    background-color: #205295;
+}
+
+.card{
+    margin-top: 100px;
+}
+
+.btn{
+    
+    margin-top: 30px;
+    background-color: #205295;
+      border-color:  #205295;
+      border-style: solid; 
+      border-width: 1px; 
+      border-radius: 2px;
+      cursor: pointer;
+      color: white;  
+      transition: background-color 1s,
+        color 1s;
+      vertical-align: top;
+}
+
+.btn:hover{
+    background-color: white; 
+      color:  #205295;
+      border-color:  #205295;
+}
+
+.btn:active{
+    opacity: 0.4;
+}
+
+.email-symbol{
+    color: black;
+    text-decoration: none;
+}
+
+.row{
+    line-height: 40px;
+}
+
+.fter{
+    text-align: center;
+    line-height: 40px;
+}
+
+.address-info{
+    text-align: center;
+}
+
+.card-address{
+    text-align: center;
+}
+
+@media (min-width:992px) and (max-width:1199px){
+    .google-map{
+        width:250px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .google-map{
+        width:180px;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px){
+    .google-map{
+        width:120px;
+    }
+}
+
+
+/* Header */
+
+.img-head{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .header-text{
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    color: #53585a;
+    font-size: 3.3vw;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(0 0 4px #9b9da2);
+}

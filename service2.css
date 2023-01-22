@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Main Page */
+
+h1{
+    text-align: center;
+    margin: 150px auto auto;
+    color: #53585a;
+}
+
+h4{
+    color: #53585a;
+    
+}
+
+hr{
+    margin-bottom: 50px;
+}
+
+#card-cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    margin: 55px;
+    border-radius: 12px;
+    transition:  0.4s;    
+}
+
+.card-img{
+    background-color: #fff;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
+    
+}
+
+
+.card h4{
+    padding: 10px;
+    text-align: center;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    color: #fff;
+    background-color: #343a40;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: auto 50px 50px;
+    text-decoration: none;
+    transition:  0.6s; 
+}
+
+
+
+
+
+
+/* Header */
+
+.img-head{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .header-text{
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    color: #53585a;
+    font-size: 3.3vw;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(0 0 4px #9b9da2);
+}
+
+/*  Footer */
+
+.fter{
+    text-align: center;
+    line-height: 40px;
+}
+
+footer{
+    background: #343a40;
+    padding: 40px;
+    margin-top: 150px;
+   
+}
+
+footer a{
+    color: #f8f9fa!important
+}

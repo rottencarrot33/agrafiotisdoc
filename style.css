@@ -1,0 +1,302 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    width: 100%;
+}
+/* Icons */
+#icon{
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+#icon:hover{
+    color: #205295;
+    cursor: pointer;
+}
+
+#intro{
+    padding: 7% 11%;
+    text-align: center; 
+    margin-top: 100px;
+}
+
+@media (max-width:991px){
+    .prescriptions1,
+    .prescriptions2,
+    .prescriptions3{
+        margin-bottom: 80px;
+    }
+}
+
+.fam-doc{
+    width: 200px;
+    margin-left: 40%;
+}
+
+h3{
+    color: #343a40;
+}
+
+h3:hover{
+    color: #205295;
+    cursor: pointer;
+}
+
+/* Navbar */
+
+
+@media (max-width:767px){
+    .dropdown-item::before{
+        transform: rotate(-90deg);
+    }
+}
+.nav-link{
+    color: #251B37;
+    
+}
+
+.nav-link:hover{
+    color:#205295 ;
+}
+
+.navbar-brand{
+    color: #251B37;
+    
+}
+
+.navbar-brand:hover{
+    color: #205295;
+}
+
+   /* Cards */
+
+#card-cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 270px;
+    height: 600px;
+    margin: 15px;
+    border-radius: 12px;
+    transition:  0.4s;    
+}
+
+.card-img{
+    background-color: #343a40;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.img-card-1{
+    background-image: url(images/diabetes.jpg);
+}
+
+.img-card-2{
+    background-image: url(images/hypertension.jpg);
+}
+
+.img-card-3{
+    background-image: url(images/heart-apple.jpg);
+}
+
+.img-card-4{
+    background-image: url(images/osteoporosi.jpg);
+}
+
+.card h4{
+    padding: 10px;
+    text-align: center;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card a{
+    color: #fff;
+    background-color: #343a40;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: auto 50px 50px;
+    text-decoration: none;
+    transition:  0.6s; 
+}
+
+.card:hover{
+    background-color: #343a40 ;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.card a:hover{
+    background-color: white;
+    color: #343a40;
+}
+
+/* Card-bio */
+
+.providers{
+    text-align: center;
+    padding: 50px 0 70px;
+    border-bottom: 1px solid #dfe5e8;
+    line-height:100%;
+    font-size:14px;
+    color:#333;
+  }
+
+  @media (max-width:767px){
+    .providers{
+        padding: 0;
+    }
+  }
+  
+  .provider-blocks{
+    color: #333;
+    width: 320px;
+    float: none;
+    text-decoration: none;
+    background-color: transparent;
+      
+  }
+
+  .provider-block a{
+    color: #333;
+    width: 320px;
+    float: none;
+    text-decoration: none;
+    background-color: transparent; 
+  }
+  
+  .image-bio{
+      border-radius: 50%;
+      border-width: 2px;
+      border-style: solid;
+      border-color: white;
+      filter: brightness(120%);
+      filter: contrast(120%);
+      filter: drop-shadow(0 0 12px grey);
+      transition:  0.4s; 
+    }
+
+    .image-bio:hover{
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+
+    .card-info{
+        color: #343a40;
+        line-height: 5px;
+        transition:  0.2s;
+    
+    }
+    
+    .card-info:hover{
+        color: #205295;
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+
+    .provider-blocks{
+        width: 320px;
+        height: 340px;
+        text-align: center;
+        display: inline-table;
+        background: #fff;
+        padding-top: 30px;
+        box-shadow: 0 0 5px #343a40;
+        border-radius: 6px;
+        overflow: hidden;
+        margin: 8px;
+        cursor: pointer;
+        transition:  0.4s; 
+    }
+
+    .provider-blocks:hover{
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+
+    .provider-info{
+        padding-top: 20px;
+        color: #fff;
+    }
+
+
+    /* Pree footer */
+
+.carousel{
+    margin-top: 50px;
+    height:500px;
+    background-image: url(https://media1.popsugar-assets.com/files/thumbor/t1eKOw5GalcXue1-X6L9-ZeT64M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/02/05/899/n/44100376/1e0e17e833d894a2_IMG_6821/i/Dont-Afraid-Mix-Black-White-Color-Photos.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+  }
+
+  
+
+  .carousel-inner{
+    height: 400px;
+    text-align: center;
+    margin-top: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .carousel-item{ 
+    top: 40%;
+    color:white;
+    font-size: 40px;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(0 0 2px black);
+  }
+  
+  @media (max-width:767px){
+    .carousel-item{
+        font-size: 30px;
+        top: 10%;
+    }
+  }
+
+  @media (min-width:768px) and (max-width:991px){
+    .carousel-item{
+        font-size: 32px;
+        top: 20%;
+    }
+  }
+
+/*  Footer */
+
+.fter{
+    text-align: center;
+    line-height: 40px;
+}
+
+footer{
+    background: #343a40;
+    padding: 40px;
+    margin-top: 150px;
+   
+}
+
+footer a{
+    color: #f8f9fa!important
+}
+
+
+
+    
+

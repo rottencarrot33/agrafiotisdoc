@@ -1,0 +1,118 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.nav-link{
+    color: #251B37;
+    
+}
+
+.nav-link:hover{
+    color:#205295 ;
+}
+
+.navbar-brand{
+    color: #251B37;
+    
+}
+
+.navbar-brand:hover{
+    color: #205295;
+}
+
+
+/*  Footer */
+
+.fter{
+    text-align: center;
+    line-height: 40px;
+}
+
+footer{
+    background: #343a40;
+    padding: 40px;
+    margin-top: 150px;  
+}
+
+@media (min-width:1399px){
+    footer{
+        margin-top: 160px;
+    }
+}
+footer a{
+    color: #f8f9fa!important
+}
+
+/* Slides */
+.container-image{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+
+.iatreio{
+    color: #53585a;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#time-office{
+    margin-left: 130px;
+    padding-top: 50px;
+    color: #53585a;
+}
+
+@media (max-width:991px){
+    #time-office{
+    margin-left: 50px;
+    padding-top: 50px;
+}
+}
+
+@media only screen and (max-width: 354px) {
+    .timetable{
+      display: none;
+    }
+  }
+
+.img-head{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.header-text{
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    color: #53585a;
+    font-size: 3.3vw;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(0 0 4px #9b9da2);
+}
+

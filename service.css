@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Main Page */
+
+
+
+@media (min-width:1199px){
+    #main-body{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width:1198px){
+    #main-body{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width:767px){
+    p{
+        padding-top: 5%;
+    }
+    img{
+        margin-bottom: 10%;
+    }
+}
+
+#main-body{
+    margin-top: 100px;
+}
+
+.main-text-left{
+    padding-left: 5%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: #343a40;
+    color: white;
+}
+
+.main-text-right{
+    padding-right: 5%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border: solid;
+    border-color: #343a40;
+}
+
+@media (max-width: 645px){
+    p{
+        margin-top: 250px;
+    }
+   img{
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+p{
+    padding-right: 5%;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+.h2-right{
+    padding-left: 5%;
+}
+
+.h1-head{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.diabetes-img{
+    max-width: 250px;
+    border-radius: 10%;
+    border: solid;
+    border-color: #343a40;
+    float: left;
+    margin-right: 40px;
+}
+
+.heart-img{
+    max-width: 250px;
+    border-radius: 10%;
+    border: solid;
+    border-color: #343a40;
+    float: right;
+    margin-left: 40px;
+}
+
+
+
+/* Header */
+
+.img-head{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .header-text{
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    color: #53585a;
+    font-size: 3.3vw;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(0 0 4px #9b9da2);
+}
+
+/*  Footer */
+
+.fter{
+    text-align: center;
+    line-height: 40px;
+}
+
+footer{
+    background: #343a40;
+    padding: 40px;
+    margin-top: 150px;
+   
+}
+
+footer a{
+    color: #f8f9fa!important
+}

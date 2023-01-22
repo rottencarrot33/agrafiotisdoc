@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*  Footer */
+
+.fter{
+    text-align: center;
+    line-height: 40px;
+}
+
+footer{
+    background: #343a40;
+    padding: 40px;
+    margin-top: 150px;
+   
+}
+
+footer a{
+    color: #f8f9fa!important
+}
+
+/* Header */
+
+.img-head{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .header-text{
+    position: absolute;
+    top: 65%;
+    left: 12%;
+    color: #53585a;
+    font-size: 3.3vw;
+    filter: brightness(120%);
+    filter: contrast(120%);
+    filter: drop-shadow(0 0 4px #9b9da2);
+}
+
+
+/* CV */
+
+.cv-img{
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.cv-row{
+    margin: 30px auto 30px 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+p{
+  font-size: 20px;
+}
+.cv-bg-row{
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center; 
+    border: solid;
+    border-color: #393E46;  
+    margin-top: 80px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: #393E46;
+    font-size: 45px
+}
+@media (min-width:767px){
+    .cv-bg-row{
+        display: flex;
+    } 
+    .cv-bg-right{
+        width: 60%;
+    }
+    .cv-bg-left{
+        width: 40%;
+    }
+}
+
+@media (max-width:353px){
+  .cv-info{
+    font-size: 20px;
+  }
+}
+
+.cv-bg-right{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #393E46;
+    margin-left: 0;
+    color: #fff;
+}
+
+hr{
+    color: #fff;
+}
+
+.button-cv{
+    padding-top: 9px; 
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+/* Collapsible */
+
+.collapsible{
+    background-color: #393E46;
+    color: white;
+    border: solid;
+    border-color: #343a40;
+    border-radius: 18px;
+    font-size: 15px; 
+    cursor: pointer;
+    margin-left: 8px;
+    margin-top: 20px;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 30%;
+  }
+
+  
+  .content{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
+  }
+
+  .collapsible2{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .collapsible3{
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  .collapsible4{
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .collapsible5{
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .collapsible6{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  .collapsible7{
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+
+  #short-bio{
+    margin-bottom: 50px;
+ }
+
