@@ -296,7 +296,11 @@ footer a{
     color: #f8f9fa!important
 }
 
-
+@media (max-width:576px){
+    .logo-nav{
+        max-width: 70px;
+    }
+}
 
     
 
