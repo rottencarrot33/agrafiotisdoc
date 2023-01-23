@@ -180,3 +180,8 @@ hr{
     margin-bottom: 50px;
  }
 
+@media (max-width:576px){
+    .logo-nav{
+        max-width: 70px;
+    }
+}
