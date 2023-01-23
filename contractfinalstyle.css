@@ -104,3 +104,9 @@ footer a{
     filter: contrast(120%);
     filter: drop-shadow(0 0 4px #9b9da2);
 }
+
+@media (max-width:576px){
+    .logo-nav{
+        max-width: 70px;
+    }
+}
