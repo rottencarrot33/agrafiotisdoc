@@ -29,9 +29,14 @@ body{
     p{
         padding-top: 5%;
     }
-    img{
-        margin-bottom: 10%;
-    }
+    .diabetes-img{
+    margin-left: 60px;
+    margin-right: 60px;
+   }
+   .heart-img{
+    margin-left: 60px;
+    margin-right: 60px;
+   }
 }
 
 #main-body{
