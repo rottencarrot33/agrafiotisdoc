@@ -9,24 +9,34 @@ body{
 }
 
 /* Navbar */
-.nav-link{
-    color: #251B37;
-    
+
+@media (min-width:454px){
+    .navbar{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
-.nav-link:hover{
-    color:#205295 ;
+@media (max-width:576px){
+    .navTitle{
+        font-size: 16px;
+    }
 }
 
-.navbar-brand{
-    color: #251B37;
-    
+.logo-nav{
+    max-width: 70px;
 }
 
-.navbar-brand:hover{
-    color: #205295;
+
+@media (max-width:767px){
+    .dropdown-item::before{
+        transform: rotate(-90deg);
+    }
 }
 
+.navbar{
+    background: #fff;
+}
 
 /*  Footer */
 
@@ -62,7 +72,7 @@ footer a{
 }
 
 .swiper{
-    width: 80%;
+    width: 87%;
     height: fit-content;
 }
 
@@ -81,43 +91,88 @@ footer a{
 }
 
 #time-office{
-    margin-left: 130px;
-    padding-top: 50px;
+    margin-left: 80px;
+    padding-top: 150px;
     color: #53585a;
 }
 
 @media (max-width:991px){
     #time-office{
     margin-left: 50px;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 }
 
+/*
 @media only screen and (max-width: 354px) {
     .timetable{
       display: none;
     }
   }
+*/
 
-.img-head{
+/* Header */
+
+@media (min-width:1350px){
+    .header{
+        min-height: 600px;
+    }  
+    
+}
+
+@media (min-width:767px){
+    .header-text{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:767px){
+    .header-text{
+        font-size: 6vw;
+    }
+}
+
+  .header{
+    height:500px;
+    background-image: url(images/hc1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
     position: relative;
     text-align: center;
     color: white;
   }
 
-.header-text{
+  .header-text{
     position: absolute;
     top: 65%;
     left: 12%;
     color: #53585a;
-    font-size: 3.3vw;
     filter: brightness(120%);
     filter: contrast(120%);
     filter: drop-shadow(0 0 4px #9b9da2);
 }
 
-@media (max-width:576px){
-    .logo-nav{
-        max-width: 70px;
+.days,.morming,.afternoon{
+    width: 100px;
+}
+
+
+
+@media (max-width:767px){
+    .timetable{
+        padding-top: 30px;
+    }
+}
+
+@media (min-width:1199px) and (max-width:1399px){
+    footer{
+        margin-top: 300px;
+    }
+}
+
+@media (min-width:1400px){
+    footer{
+        margin-top: 500px;
     }
 }

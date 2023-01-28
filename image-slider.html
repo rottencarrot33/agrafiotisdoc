@@ -20,9 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-  </style>
+  
 
   <title>Office</title>
   <link rel="stylesheet" href="image-slider.css">
@@ -35,12 +33,16 @@
 
 
 
+  <!-- Navbar -->
+
+
+
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div>
         <a class="navbar-brand" href="index.html">
           <img class="logo-nav" style="width: 110px;" src="images/logo2.png" alt="">
-          Αγραφιώτης Γεώργιος
+          <span class="navTitle">Αγραφιώτης Γεώργιος</span>
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
@@ -69,7 +71,7 @@
                   <li><a class="dropdown-item" href="service.html#osteoporosis">Οστεοπόρωση</a></li>
                   <li><a class="dropdown-item" href="service.html#xap">ΧΑΠ</a></li>
                   <li><a class="dropdown-item" href="service.html#anxiety1">Αγχώδες Διαταραχή</a></li>
-                  <li><a class="dropdown-item" href="service.html#anxiety2">Κατάθλιψη</a></li>
+                  <!--<li><a class="dropdown-item" href="service.html#anxiety2">Κατάθλιψη</a></li>-->
                 </ul>
               </li>
 
@@ -77,9 +79,11 @@
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="service2.html#emergency">Επείγουσες καταστάσεις</a></li>
+              <li><a class="dropdown-item" href="service2.html#covid19">Covid 19</a></li>
               <li><a class="dropdown-item" href="service2.html#special-programs">Ειδικά προγράμματα</a></li>
               <li><a class="dropdown-item" href="service2.html#certificates">Ιατρικά πιστοποιητικά</a></li>
               <li><a class="dropdown-item" href="service2.html#documents">Συνταγογραφήσεις</a></li>
+              <li><a class="dropdown-item" href="service2.html#athome">Kατ'οίκον φροντίδα</a></li>
             </ul>
           </li>
           <li>
@@ -98,13 +102,14 @@
 
   <!-- Header -->
 
-  <div class="img-head">
-    <img class="head-image col-12" src="images/hc1.jpg" alt="header">
-    <div class="header-text"><strong>Ιατρείο</strong></div>
-  </div>
-
+    <div class="header">
+      <span class="header-text"><strong >Ιατρείο</strong></span>
+    </div>
+  </header>
 
   <!-- Slides -->
+
+  <div id="officeMain"></div>
   <div class="container">
 
     <div class="container-image">
@@ -112,19 +117,17 @@
       <div class="swiper">
         <div class="swiper-wrapper">
 
-          <div class="swiper-slide"><img src="photos/1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="photos/2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="photos/3.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="photos/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/office1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/office2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/office3.jpg" alt=""></div>
 
         </div>
-
-
-
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
       </div>
+
+      
       <div id="time-office" class="row">
         <div class="schedule col-lg-6 col-md-6 col-sm-12">
           <h2>Πληροφορίες</h2>
@@ -134,32 +137,38 @@
         </div>
         <div class="timetable col-lg-6 col-md-6 col-sm-12">
           <table>
+            
+            
             <tr>
-              <th>
-                <h2>Ωράριο Ιατρείου</h2>
-              </th>
-              <th></th>
+              <th class="days">Ωράριο</th>
+              <th class="morming">Πρωϊ</th>
+              <th class="afternoon">Απόγευμα </th>
 
             </tr>
             <tr>
               <td class="days">Δευτέρα</td>
-              <td class="hours">9:00 - 17:00</td>
+              <td class="morming">10:30-14:30</td>
+              <td class="afternoon">18:30-21:30</td>
             </tr>
             <tr>
               <td class="days">Τρίτη</td>
-              <td class="hours">9:00 - 17:00</td>
+              <td class="morming">10:30-14:30</td>
+              <td class="afternoon">18:30-21:30</td>
             </tr>
             <tr>
               <td class="days">Τεράρτη</td>
-              <td class="hours">9:00 - 17:00</td>
+              <td class="morming">10:30-14:30</td>
+              <td class="afternoon">18:30-21:30</td>
             </tr>
             <tr>
               <td class="days">Πέμπτη</td>
-              <td class="hours">9:00 - 17:00</td>
+              <td class="morming">10:30-14:30</td>
+              <td class="afternoon">18:30-21:30</td>
             </tr>
             <tr>
               <td class="days">Παρασκευή</td>
-              <td class="hours">9:00 - 17:00</td>
+              <td class="morming">10:30-14:30</td>
+              <td class="afternoon">18:30-21:30</td>
             </tr>
             <tr>
               <td class="days">Σάββατο</td>
@@ -169,6 +178,7 @@
               <td class="days">Κυριακή</td>
               <td class="hours">Κλειστά</td>
             </tr>
+          
           </table>
         </div>
       </div>
@@ -185,7 +195,7 @@
           <div class="fn org"> Ιατρείο Γενικής - Οικογενειακής Ιατρικής & Πρόληψης<span class="divider"> | </span>
             Αγραφιώτης Γεώργιος, Θεσσαλονίκη, Ελλάδα</div>
           <div class="phonenum"><u>Τηλ.</u> 2315555192<span class="divider"> | </span> <u>Email.</u>
-            agrafiotis@iatros@yahoo.gr</div>
+            info@prosopikosiatros.com</div>
 
 
           <span class="divider">|</span>
@@ -193,6 +203,7 @@
             <u>Διεύθυνση:</u> <span class="divider"> | </span><span class="street-address">Αρχαιολογικού Μουσείου 33,
             </span>
             <span class="locality">Θεσσαλονίκη</span><span> 546 40</span>
+            <p style="margin: 30px auto 0;" class="powered"><span style="margin-right: 45px;">Powered by <strong>netorbyte</strong></span><span class="netmail">dev@netorbyte.com</span></p>
           </div>
         </div>
 
@@ -225,8 +236,8 @@
 
     });
   </script>
-  
-  
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>

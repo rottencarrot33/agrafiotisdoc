@@ -1,3 +1,41 @@
+<?php
+
+echo "<pre>";
+     print_r($_POST);
+echo '</pre>';
+
+$message_sent=false;
+if(isset($_POST['email']) !=''){
+
+
+if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+
+    $name = $_POST['name'];
+    $mailFrom = $_POST['email'];
+    $message = $_POST['message'];
+
+
+$mailTo="info@prosopikosiatros.com";
+$headers="From: ".$mailFrom;
+$txt="New e-mail from ".$name.".\n\n".$message;
+
+
+    mail($mailTo, $txt, $headers);
+    header("Location: index.php?mailsend");
+
+    $message_sent=true;
+}
+else{
+    $invalid_class_name="form-invalid";
+}
+}
+
+?>
+
+
+
+
+
 <!doctype html>
 <html lang="en">
 
@@ -11,6 +49,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,11 +59,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+ 
 
+  <title>Contact</title>
 
-  <title>Services</title>
+  <link rel="stylesheet" href="contractfinalstyle.css">
 
-  <link rel="stylesheet" href="service2.css">
 </head>
 
 <body>
@@ -96,187 +136,70 @@
     </nav>
   </div>
 
-
   <!-- Header -->
 
   <header>
     <div class="header">
-      <span class="header-text"><strong>Υπηρεσίες</strong></span>
+      <span class="header-text"><strong >Επικοινωνία</strong></span>
     </div>
   </header>
 
+  <!-- Contact form -->
 
-  <!--  Main Page -->
 
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="card-top" class="card">
+          <div class="card-header text-white"><i class="fa fa-envelope"></i> Στείλτε μας το μήνυμα σας
+          </div>
+          <div class="card-body">
+            <form class="contact-form" action="https://formsubmit.co/sakis.mnlds@gmail.com" method="POST">
+              <div class="form-group">
+                <label for="name">Ονοματεπώνυμο</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                  placeholder="Ονοματεπώνυμο" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="e-mail" name="email"
+                  required>
+                <small id="emailHelp" class="form-text text-muted">Τα στοιχεία σας παραμένουν εμπιστευτικά</small>
+              </div>
+              <div class="form-group">
+                <label for="message">Το μήνυμα σας</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Το μήνυμα σας" name="message" required></textarea>
+              </div>
+              <div class="mx-auto">
+                <button type="submit" class="btn text-right">Αποστολή</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="card-address col-12 col-sm-4">
+        <div class="card bg-light mb-3">
+          <div class="card-header text-white"><i class="fa fa-home"></i> Διεύθυνση</div>
+          <div class="card-body">
+            <iframe class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.634498165804!2d22.955459615615514!3d40.61588715142641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839435c24f9cf%3A0x4a7c0f2009763671!2zzpHOk86hzpHOps6ZzqnOpM6XzqMgzpPOlc6pzqHOk86Zzp_OoyDOmc6RzqTOoc6VzpnOnyDOn86ZzprOn86TzpXOnc6VzpnOkc6azpfOoyDOmc6RzqTOoc6ZzprOl86j!5e0!3m2!1sel!2sgr!4v1673452184623!5m2!1sel!2sgr"></iframe>
+            <div>
+              <p style="line-height: 22px;"><i class="fa-solid fa-location-dot"></i> Αρχαιολογικού Μουσείου
+                33,<br>Θεσσαλονίκη 546 40</p>
+            </div>
+            <div><a style="text-decoration: none;" href="mailto:info@prosopikosiatros.com">
+                <p><i class="email-symbol fa-solid fa-at"></i> info@prosopikosiatros.com</p>
+              </a></div>
+            <div><a style="text-decoration: none;" href="tel:00302315555192">
+                <p><i class="email-symbol fa-solid fa-phone"></i> +30 231 555 5192 </p>
+              </a></div>
 
-  <div id="emergency"></div>
-  <h1>Επείγουσες καταστάσεις</h1>
-  <hr>
+          </div>
 
-  <section id="card-cont" class="container">
-
-    <div class="card">
-      <img class="card-img" src="images/pathological.jpg" alt="">
-      <h4>Παθολογικές</h4>
+        </div>
+      </div>
     </div>
-
-    <div class="card">
-      <img class="card-img" src="images/surgery.jpg" alt="">
-      <h4>Χειρουργικές</h4>
-    </div>
-
-  </section>
-
-
-  <div id="covid19"></div>
-  <h1>Covid 19</h1>
-  <hr>
-
-  <section id="card-cont" class="container">
-
-    <div class="card">
-      <img class="card-img" src="images/covid19.JPG" alt="">
-
-      <h4>Παρακολούθηση Covid 19 λοίμωξης</h4>
-    </div>
-
-    <div class="card">
-      <img class="card-img" src="images/postcovid.jpg" alt="">
-      <h4>Παρακολούθηση συνδρόμου Post Covid</h4>
-    </div>
-
-  </section>
-
-
-  <div id="special-programs"></div>
-  <h1>Ειδικά προγράμματα</h1>
-  <hr>
-
-  <section id="card-cont" class="container">
-
-    <div class="card">
-      <img class="card-img" src="images/smoking.jpg" alt="">
-      <h4>Διακοπή καπνίσματος</h4>
-    </div>
-
-    <div class="card">
-      <img class="card-img" src="images/obese.jpg" alt="">
-      <h4>Παχυσαρκία</h4>
-    </div>
-
-  </section>
-
-  <div id="certificates"></div>
-  <h1>Έκδοση ιατρικών πιστοποιητικών</h1>
-  <hr>
-
-  <section id="card-cont" class="container">
-
-    <div class="card">
-      <img class="card-img" src="images/swimming.png" alt="">
-      <h4>Αθλητικό πιστοποιητικό</h4>
-    </div>
-
-    <div class="card">
-      <img class="card-img" src="images/factory.jpg" alt="">
-      <h4>Πιστοποιητικό υγείας</h4>
-    </div>
-
-  </section>
-
-
-
-
-  <div id="documents"></div>
-  <h1>Συνταγογράφιση</h1>
-  <hr>
-
-  <section id="card-cont" class="container">
-
-    <div class="card card2">
-      <img class="card-img" src="images/presciption0.jpg" alt="">
-      <h4>Συνταγογράφιση</h4>
-      <ul>
-        <li>Χρόνιων παθήσεων</li>
-        <li>3μηνες συνταγές</li>
-        <li>6μηνες συνταγές</li>
-        <li>Αντιικά φάρμακα (Covid 19)</li>
-
-      </ul>
-    </div>
-
-    <div class="card card2">
-      <img class="card-img" src="images/presciption.jpg" alt="">
-      <h4>Παραπεμπτικά</h4>
-      <ul>
-        <li>Προληπτικός έλεγος</li>
-        <li>Παρακολούθηση χρόνιων νοσημάτων</li>
-        <li>Επείγουσες καταστάσεις</li>
-      </ul>
-    </div>
-
-  </section>
-
-  <div id="athome"></div>
-  <h1>Επισκέψεις κατ'οίκον</h1>
-  <hr>
-
-  <section id="card-cont" class="container">
-
-    <div class="card card2">
-      <img class="card-img" src="images/athome.jpg" alt="">
-      <h4>Kατ'οίκον φροντίδα</h4>
-      <p>Αν κριθεί αδύνατη η μεταφορά του ασθενούς στο ιατρείο, δύναται η δυνατότητα επίσκεψης στον χώρο σας κατόπιν
-        συνεννόησης</p>
-    </div>
-
-  </section>
-
-
-  <h1 id="main-head">Χρόνιες παθήσεις</h1>
-  <hr>
-
-  <section id="card-cont" class="container">
-
-    <div class="card">
-      <img class="card-img" src="images/diabetes2.jpg" alt="">
-      <h4>Σακχαρώδης Διαβήτης</h4>
-    </div>
-
-    <div class="card">
-      <img class="card-img" src="images/hypertension.jpg" alt="">
-      <h4>Αρτηριακή Υπέρταση</h4>
-    </div>
-
-    <div class="card">
-      <img class="card-img" src="images/iperlipidemia.jpg" alt="">
-      <h4>Υπερλιπιδαιμία</h4>
-    </div>
-
-    <div class="card">
-      <img class="card-img" src="images/backpain.jpg" alt="">
-      <h4>Οστεοπόρωση</h4>
-    </div>
-
-    <div class="card">
-      <img class="card-img" src="images/xap2.jpg" alt="">
-      <h4>ΧΑΠ</h4>
-    </div>
-
-    <!--
-    <div class="card">
-      <img src="images/anxiety2.jpg" alt="">
-      <div class="card-img"></div>
-      <h4>Κατάθλιψη</h4>
-    </div>
-  -->
-
-    <div class="card">
-      <img class="card-img" src="images/anxiety1.jpg" alt="">
-      <h4>Αγχώδες Διαταραχή</h4>
-    </div>
-
-  </section>
+  </div>
 
 
   <!-- Footer -->

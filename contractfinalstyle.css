@@ -2,6 +2,9 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+/* Footer */
+
 footer{
     background: #343a40;
     padding: 40px;
@@ -10,6 +13,35 @@ footer{
 
 footer a{
     color: #f8f9fa!important
+}
+
+/* Navbar */
+@media (min-width:454px){
+    .navbar{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width:576px){
+    .navTitle{
+        font-size: 16px;
+    }
+}
+
+.logo-nav{
+    max-width: 70px;
+}
+
+
+@media (max-width:767px){
+    .dropdown-item::before{
+        transform: rotate(-90deg);
+    }
+}
+
+.navbar{
+    background: #fff;
 }
 
 .card-header{
@@ -88,7 +120,31 @@ footer a{
 
 /* Header */
 
-.img-head{
+@media (min-width:1350px){
+    .header{
+        min-height: 600px;
+    }  
+    
+}
+
+@media (min-width:767px){
+    .header-text{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width:767px){
+    .header-text{
+        font-size: 6vw;
+    }
+}
+
+  .header{
+    height:500px;
+    background-image: url(images/hc1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
     position: relative;
     text-align: center;
     color: white;
@@ -99,14 +155,8 @@ footer a{
     top: 65%;
     left: 12%;
     color: #53585a;
-    font-size: 3.3vw;
     filter: brightness(120%);
     filter: contrast(120%);
     filter: drop-shadow(0 0 4px #9b9da2);
 }
 
-@media (max-width:576px){
-    .logo-nav{
-        max-width: 70px;
-    }
-}

@@ -15,14 +15,12 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="/images/icons8-pulse-32.png">
-  
+
   <!-- Ubuntu Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-  </style>
+ 
 
   <title>Agrafiotis Georgios</title>
 
@@ -36,11 +34,11 @@
 
 
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
       <div>
         <a class="navbar-brand" href="index.html">
           <img class="logo-nav" style="width: 110px;" src="images/logo2.png" alt="">
-          Αγραφιώτης Γεώργιος
+          <span class="navTitle">Αγραφιώτης Γεώργιος</span>
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
@@ -69,7 +67,7 @@
                   <li><a class="dropdown-item" href="service.html#osteoporosis">Οστεοπόρωση</a></li>
                   <li><a class="dropdown-item" href="service.html#xap">ΧΑΠ</a></li>
                   <li><a class="dropdown-item" href="service.html#anxiety1">Αγχώδες Διαταραχή</a></li>
-                  <li><a class="dropdown-item" href="service.html#anxiety2">Κατάθλιψη</a></li>
+                  <!--<li><a class="dropdown-item" href="service.html#anxiety2">Κατάθλιψη</a></li>-->
                 </ul>
               </li>
 
@@ -77,9 +75,11 @@
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="service2.html#emergency">Επείγουσες καταστάσεις</a></li>
+              <li><a class="dropdown-item" href="service2.html#covid19">Covid 19</a></li>
               <li><a class="dropdown-item" href="service2.html#special-programs">Ειδικά προγράμματα</a></li>
               <li><a class="dropdown-item" href="service2.html#certificates">Ιατρικά πιστοποιητικά</a></li>
               <li><a class="dropdown-item" href="service2.html#documents">Συνταγογραφήσεις</a></li>
+              <li><a class="dropdown-item" href="service2.html#athome">Kατ'οίκον φροντίδα</a></li>
             </ul>
           </li>
           <li>
@@ -98,9 +98,11 @@
 
   <!-- Header -->
 
-
-  <img class="header" src="images/header.png" alt="header">
-
+<header>
+  <div class="header">
+    
+  </div>
+</header>
 
 
   <!--Icons-->
@@ -109,30 +111,58 @@
 
     <div class="row">
 
+      
       <div class="prescriptions1 col-lg-4">
-        <a href="service.html#main-head">
-          <i id="icon" class="icon fa-solid fa-stethoscope fa-5x"></i></a>
+        <a style="text-decoration: none;" href="service2.html">
+          <i id="icon" class="icon fa-solid fa-stethoscope"></i>
         <h3>Παρεχώμενες Υπηρεσίες</h3>
-
+      </a>
       </div>
 
       <div class="prescriptions2 col-lg-4">
-        <i id="icon" class="icon fa-solid fa-staff-snake fa-5x"></i>
-        <h3>Συνταγογραφήσεις</h3>
+        <a style="text-decoration: none;" href="service.html">
+          <i id="icon" class="icon fa-solid fa-staff-snake"></i>
+        <h3>Χρόνιες παθήσεις</h3>
+      </a>
       </div>
 
       <div class="prescriptions3 col-lg-4">
-        <a href="contactfinal.html#card-top">
-          <i id="icon" class="fa-regular fa-calendar-check fa-5x"></i></a>
+        <a style="text-decoration: none;" href="contact.php">
+          <i id="icon" class="icon fa-regular fa-calendar-check"></i>
         <h3>Κλείστε Ραντεβού</h3>
+      </a>
       </div>
+
+      <div class="prescriptions4 col-lg-6">
+        <a style="text-decoration: none;" href="cv.html">
+          <i id="icon" class="icon fa-solid fa-scroll"></i>
+        <h3>Βιογραφικό</h3>
+      </a>
+      </div>
+
+      <div class="prescriptions5 col-lg-6">
+        <a style="text-decoration: none;" href="image-slider.html">
+          <i id="icon" class="icon fa-solid fa-house-medical"></i>
+        <h3>Ιατρείο</h3>
+      </a>
+      </div>
+
+     
 
     </div>
   </section>
 
-  <label for=""></label>
+
+
+
+  
+
+  
+
+
 
   <!-- Cards -->
+<!--
   <h2 style="text-align:center">Χρόνιες Παθήσεις</h2>
   <hr>
   <section id="card-cont" class="container">
@@ -172,14 +202,44 @@
     </div>
 
   </section>
+-->
 
+<!--  Pre Footer -->
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p>Καταπληκτικός γιατρός,ευγενικοτατος, πλήρως καταρτισμένος, υπομονετικός με τον ασθενή, τιμάει το λειτούργημα
+        του!</p>
+      <h5>Kostas K.</h5>
+    </div>
+    <div class="carousel-item">
+      <p>Ευγενέστατος, εξυπηρετικός και υπομονητικός άνθρωπος, η καλύτερη συνταγή για ιδανικό οικογενειακό ιατρό.</p>
+      <h5>Michalis G.</h5>
+    </div>
+    <div class="carousel-item">
+      <p class="carouselLastText">Εξαιρετικός γιατρός, άκουσε το πρόβλημα μου, με εξέτασε, μου εξήγησε τα πάντα αναλυτικά και μου έλυσε οποία
+        απορία είχα. Αφιέρωσε αρκετό χρόνο με το πρόβλημα μου.</p>
+      <h5>Theodore K.</h5>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
   <!-- Card-bio -->
 
   <section class="providers pinstripe">
 
-    <div class="provider-blocks" style="background-color: #343a40;">
-      <div class="row">
+    <div class="provider-blocks" style="background: linear-gradient(to right, #343a40, #B2B2B2);">
+      
         <div class="provider-block">
           <a href="cv.html#cv">
             <div class="provider-pic">
@@ -191,43 +251,19 @@
             </div>
           </a>
         </div>
+      
+    </div>
 
-
-      </div>
+    <div class="provider-blocks2" style= "background: linear-gradient(to right, #B2B2B2, #343a40);">
+      <h3 style="color: white;" >Ο ιατρός θεραπέυει την νόσο, ο καλός ιατρός θεραπεύει τον άνθρωπο
+      </h3>
+  
     </div>
 
   </section>
 
 
-  <!--  Pre Footer -->
-
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <p>Καταπληκτικός γιατρός,ευγενικοτατος, πλήρως καταρτισμένος, υπομονετικός με τον ασθενή, τιμάει το λειτούργημα
-          του!</p>
-        <h5>Kostas K.</h5>
-      </div>
-      <div class="carousel-item">
-        <p>Ευγενέστατος, εξυπηρετικός και υπομονητικός άνθρωπος, η καλύτερη συνταγή για ιδανικό οικογενειακό ιατρό.</p>
-        <h5>Michalis G.</h5>
-      </div>
-      <div class="carousel-item">
-        <p>Εξαιρετικός γιατρός, άκουσε το πρόβλημα μου, με εξέτασε, μου εξήγησε τα πάντα αναλυτικά και μου έλυσε οποία
-          απορία είχα. Αφιέρωσε αρκετό χρόνο με το πρόβλημα μου.</p>
-        <h5>Theodore K.</h5>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  
 
 
 
@@ -240,7 +276,7 @@
           <div class="fn org"> Ιατρείο Γενικής - Οικογενειακής Ιατρικής & Πρόληψης<span class="divider"> | </span>
             Αγραφιώτης Γεώργιος, Θεσσαλονίκη, Ελλάδα</div>
           <div class="phonenum"><u>Τηλ.</u> 2315555192<span class="divider"> | </span> <u>Email.</u>
-            agrafiotis@iatros@yahoo.gr</div>
+            info@prosopikosiatros.com</div>
 
 
           <span class="divider">|</span>
@@ -248,6 +284,7 @@
             <u>Διεύθυνση:</u> <span class="divider"> | </span><span class="street-address">Αρχαιολογικού Μουσείου 33,
             </span>
             <span class="locality">Θεσσαλονίκη</span><span> 546 40</span>
+            <p style="margin: 30px auto 0;" class="powered"><span style="margin-right: 45px;">Powered by <strong>netorbyte</strong></span><span class="netmail">dev@netorbyte.com</span></p>
           </div>
         </div>
 
